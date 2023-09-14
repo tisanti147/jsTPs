@@ -29,3 +29,8 @@ function retrasarEjecucion(callback, ms){
 }
 
 retrasarEjecucion(cb, 3000)
+
+//4.
+obtenerDatosUsuario = (id, callback) => {
+    
+}
