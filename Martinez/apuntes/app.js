@@ -53,6 +53,17 @@ const getEstudianteById = (id) => new Promise ((resolve, reject) => {
     }
 })
 
-getEstudianteById(2)
+/*getEstudianteById(2)
     .then((estudiante) => console.log(estudiante))
-    .catch((error) => console.log(error))
+    .catch((error) => console.log(error))*/
+
+async function verEstudiante(id){
+    try{
+    const estudiante = await getEstudianteById(id)
+    console.log(estudiante)
+    }catch(error){
+        console.log(error);
+    }
+}
+
+verEstudiante(10)
